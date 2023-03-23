@@ -2,8 +2,8 @@ def validate_student_presence(student_presence):
     if (
         student_presence[0] is None
         or student_presence[1] is None
-        or type(student_presence[0]) is str
-        or type(student_presence[1]) is str
+        or type(student_presence[0]) is not int
+        or type(student_presence[1]) is not int
     ):
         raise ValueError
 
